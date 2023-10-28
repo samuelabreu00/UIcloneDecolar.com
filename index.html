@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./acets/img-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/index.css">
+    
+    <title>Agência de Viagens Online</title>
+</head>
+<body>
+    
+
+
+<nav class="nav">
+
+    <header class="header">
+
+    <div class="logo">
+        <img src="./acets/img-logo-header.png" alt="" class="img-logo">
+    </div>
+
+    <ul class="listas">
+        <li><i class="fa-solid fa-headset televenda-icon"></i><a href="" class="televendas-link"> Televendas <span class="televendas">  0800 883 6342</span></a></li>
+        <li><i class="fa-solid fa-passport"></i><a href=""> <span>Passaporte</span></a> </li>
+        <li><i class="fa-regular fa-user"></i><a href=""><span>Iniciar Sessão</span></a>  </li>
+        <li><i class="fa-solid fa-suitcase"></i><a href=""><span>Minhas Viagens</span></a>  </li>
+        <li><i class="fa-solid fa-question"></i><a href=""> <span>Ajuda</span> </a></li>
+    </ul>
+
+    </header>
+</nav>
+
+
+<section class="hospedagens">
+
+    <div class="container">
+        <div class="content">
+
+          <div class="topo-content">
+            <h1>Passagens aéreas</h1>
+            <div class="passagem">
+                <a href="">
+                    <div class="ida_volta">
+                        Ida e Volta
+                    </div>
+                </a>
+                <a href="">
+                    <div class="ida">
+                        Só ida
+                    </div>
+                </a>
+            </div>
+          </div>
+
+          <div class="inputs">
+
+            <div class="local">
+
+                <!-- traço pontilhado -->
+                <span class="absolute"></span>
+                <!-- traço pontilhado end -->
+
+            <div class="destino destino-origem">
+                <div class="texts-destino">
+                    <label for="destinos">ORIGEM</label>
+                   <div class="icon-input"><i class="fa-regular fa-circle"></i>
+                    <input id="destinos global" type="text" value="São Paulo, Brasil" placeholder="Insira a cidade" required>
+                    <div class="list">
+                        <span class="name-cidade"><img src="./acets/icon-datalist.svg" alt=""><h4>Cidades</h4></span>
+                        <span><p>Santos Dumont (SDU)</p> </span>
+                        <span><p>Brasília (BSB)</p> </span>
+                        <span><p>Curitiba (CWB)</p> </span>
+                        <span><p>Porto Alegre (POA)</p> </span>
+                        <span class="name-cidade"><img src="./acets/plane-datalist.svg" alt=""><h4>Aeroportos</h4></span>
+                        <span><p>Aeroporto Internacional de Navegantes / Ministro Victor Konder</p> </span>
+                        <span><p>Aeroporto Internacional de Manaus / Eduardo Gomes</p> </span>
+                        <span><p>Aeroporto Internacional de Natal / Augusto Severo</p> </span>
+                        <span><p>Aeroporto Internacional de Porto Seguro</p> </span>
+                    </div>
+                </div> 
+                    <div class="destino-modal">
+                        <div class="content-modal">
+                            <div class="header-modal">
+                                <i class="fa-solid fa-arrow-left fechar"></i>
+                                <h4>De onde você está saindo?</h4>
+                            </div>
+                        <div class="input-modal">
+                            <input type="text" id="destinos global" placeholder="Escolha uma cidade ou aeroporto" required list="itens-modal">
+                            <div class="options" id="itens-modal">
+                                <h3>Origens mais buscadas</h3>
+                                <span>Guarulhos (GRU)</span>
+                                <span>Santos Dumont (SDU)</span>
+                                <span>Brasília (BSB)</span>
+                                <span>Curitiba (CWB)</span>
+                                <span>Porto Alegre (POA)</span>
+                            </div>
+                        </div>
+                        </div>
+                    </div> 
+                </div>
+                
+            </div>
+
+
+            <div class="destino destino-destino">
+                <div class="texts-destino">
+                    <label for="destinos">DESTINO</label>
+                    <div class="icon-input icon-inpuut">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input id="origem global" type="text" placeholder="Insira sua cidade ..." class="input-destino" required>
+                    <div class="list">
+                        <span class="name-cidade"><img src="./acets/icon-datalist.svg" alt=""><h4>Cidades</h4></span>
+                        <span><p>Santos Dumont (SDU)</p> </span>
+                        <span><p>Brasília (BSB)</p> </span>
+                        <span><p>Curitiba (CWB)</p> </span>
+                        <span><p>Porto Alegre (POA)</p> </span>
+                        <span class="name-cidade"><img src="./acets/plane-datalist.svg" alt=""><h4>Aeroportos</h4></span>
+                        <span><p>Aeroporto Internacional de Navegantes / Ministro Victor Konder</p> </span>
+                        <span><p>Aeroporto Internacional de Manaus / Eduardo Gomes</p> </span>
+                        <span><p>Aeroporto Internacional de Natal / Augusto Severo</p> </span>
+                        <span><p>Aeroporto Internacional de Porto Seguro</p> </span>
+                    </div>
+                </div>
+                </div>
+
+                 <div class="origem-modal">
+                    <div class="content-modal">
+                        <div class="header-modal">
+                            <i class="fa-solid fa-arrow-left fechaar"></i>
+                            <h4>Para onde você está indo?</h4>
+                        </div>
+                    <div class="input-modal">
+                        <input type="text" id="destinos global" placeholder="Escolha uma cidade ou aeroporto" required>
+                        <div class="options">
+                            <h3>Origens mais buscadas</h3>
+                            <span>Maceió (MCZ)</span>
+                            <span>Florianópolis (FLN)</span>
+                            <span>Belém (BEL)</span>
+                            <span>Fortaleza (FOR)</span>
+                            <span>Congonhas (CGH)</span>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+            <div class="datas">
+                <div class="data-content data-ida">
+                    <div class="texts-data">
+                        <label>DATAS</label>
+                       <div class="icon-input">
+                        <i class="fa-regular fa-calendar"></i><input id="" type="text" placeholder="Ida" required>
+                        </div> 
+                    </div>
+                    
+                </div>
+    
+                <div class="data-content data-volta">
+                    <div class="texts-data texts-data-volta">
+                            <input type="text" placeholder="Volta" class="input-destino" required>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="quartos">
+                <label for="">PASSAGEIROS E CLASSE</label>
+                <div class="icon-input">
+                    <i class="fa-regular fa-user"></i>
+                    <input class="input-quarto" id="" type="text" value="1 Pessoa, Econômica" required>
+                </div> 
+
+                <div class="modal-quarto">
+
+                <div class="pessoa">
+
+                <div class="header-pessoa">
+                    <i class="fa-solid fa-arrow-left close"></i> 
+                    <h1>Passageiros</h1>
+                </div>
+
+                <div class="main-pessoa">
+                <div class="adultos">
+                    <div class="legend">
+                        <span for="">Adultos</span>
+                        <p>A partir de 18 anos</p>
+                    </div>
+
+
+                    <div class="def-number-input number-input safari_only">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"><i class="fa-solid fa-minus"></i></button>
+
+                        <input class="quantity" min="0" name="quantity" value="1" type="number">
+
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"><i class="fa-solid fa-plus"></i></button>
+                    </div> 
+                </div>
+
+                <div class="criancas">
+                    <div class="legend">
+                        <span for="">Menor</span>
+                        <p>Até 17 anos</p>
+                    </div>
+
+
+                    <div class="def-number-input number-input safari_only">
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus"><i class="fa-solid fa-minus"></i></button>
+
+                        <input class="quantity" min="0" name="quantity" value="0" type="number">
+
+                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"><i class="fa-solid fa-plus"></i></button>
+                    </div> 
+                </div>
+            </div>
+
+                <div class="footer-pessoa">
+                <div class="classe">
+                    <span for="">Classe</span>
+
+                    <select name="" id="">
+                        <option value="">Econômica</option>
+                        <option value="">Premium economy</option>
+                        <option value="">Executiva/Business</option>
+                        <option value="">Primeira classe</option>
+                    </select>
+                </div>
+            </div>
+              
+                <div class="aplicar">
+                    <a href="">Aplicar</a>
+                </div>
+
+                 </div>
+              </div>
+            </div>    
+
+            <button class="button-buscar"><i class="fa-solid fa-magnifying-glass"></i>Buscar</button>
+
+        </div>
+          <!-- <div class="datas-nao-definidas">
+            <input type="checkbox" name="" id="">
+            <span>Ainda não defini as datas</span>
+          </div> -->
+        </div>
+    </div>
+
+</section>
+
+
+<main>
+
+<section class="section-3">
+    <div class="container-imgs">
+        <div class="content-1 content"> <img src="./acets/img-section-3.gif" alt="" class="img-1"></div>
+        <div class="content-1 content responsive"> <img src="./acets/img-section-3-responsivo.gif" alt="" class="img-2"></div>
+        <div class="content-2 content"><img src="./acets/img-section-3.1.webp" alt="" class="img-2"></div>
+        <div class="content-3 content"><img src="./acets/img-section-3.2.webp" alt="" class="img-3"></div> 
+    </div>
+</section>
+
+<div class="legenda">
+    <h3>Recentemente você buscou</h3>
+</div>
+
+
+<section class="section-4">
+    <div class="container-section">
+
+        <div class="content">
+            <div class="absolute">
+                <img src="./acets/plane-datalist.svg" alt="">
+            </div>
+            <span class="absolute"></span>
+
+            <div class="left-1"></div>
+            <div class="right">
+                <div class="topo">
+                    <label for="">VOOS DE IDA</label>
+                    <h1>Rio de Janeiro</h1>
+                    <span>De São Paulo</span>
+                </div>
+                <div class="bottom">
+                    <a href="">Continuar procurando</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="absolute">
+                <img src="./acets/plane-datalist.svg" alt="">
+            </div>
+            <span class="absolute"></span>
+            
+            <div class="left-2"></div>
+            <div class="right">
+                <div class="topo">
+                    <label for="">VOOS DE IDA</label>
+                    <h1>Fortaleza</h1>
+                    <span>De São Paulo</span>
+                </div>
+                <div class="bottom">
+                    <a href="">Continuar procurando</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="absolute">
+                <img src="./acets/plane-datalist.svg" alt="">
+            </div>
+            <span class="absolute"></span>
+            
+            <div class="left-3"></div>
+            <div class="right">
+                <div class="topo">
+                    <label for="">VOOS DE IDA</label>
+                    <h1>Florianópolis</h1>
+                    <span>De São Paulo</span>
+                </div>
+                <div class="bottom">
+                    <a href="">Continuar procurando</a>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+            </div>
+        </div> 
+
+    </div>
+</section>
+
+
+<section class="section-5">
+    <div class="container-section-5">
+        <div class="left">
+            <img src="./acets/img-section-5.webp" alt="">
+            <div class="text">
+                <h2>Meu Agente Decolar, compre com atendimento personalizado!</h2>
+                <p>Temos vários canais de atendimento para você planejar a sua viagem com a ajuda dos nossos agentes.</p>
+            </div>
+        </div>
+        <div class="right">
+            <a href="">
+                <div class="canais">Conhecer canais</div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<div class="legenda">
+    <h3>Escolha o melhor voo para sua próxima aventura</h3>
+</div>
+
+<section class="section-6">
+    <div class="container-section-6">
+        <div class="caixa">
+            <h3>Por que devo comprar uma passagem aérea na Decolar?</h3>
+            <p>Na Decolar você pode comprar passagens aéreas internacionais e nacionais pelo melhor preço. Encontre voos para viajar para onde quiser e faça com que o céu seja o seu limite. Temos uma grande variedade de companhias aéreas, passagens de avião e destinos. Confira as melhores ofertas e se prepare para viajar!</p>
+        </div>
+        <div class="caixa">
+            <h3>O que preciso saber sobre a bagagem?</h3>
+            <p>Algumas companhias oferecem passagens aéreas muito econômicas, mas que incluem apenas bagagem de mão. Antes de comprar a sua passagem aérea confira as informações sobre bagagem e descubra quantas malas você pode levar. Na Decolar oferecemos diversas opções de serviços para que você tenha uma ótima experiência de viagem.</p>
+        </div>
+        <div class="caixa">
+            <h3>Onde confiro a informação do meu voo?</h3>
+            <p>Ao pesquisar passagens aéreas internacionais ou nacionais, você pode ver a informação sobre os horários de saída e chegada de cada uma, além dos aeroportos, duração da viagem, número e tempo de escalas, classe da cabine e a bagagem incluída. Veja também o preço final das suas passagens de avião e as formas de pagamento disponíveis.</p>
+        </div>
+        <div class="caixa">
+            <h3>Dicas para comprar passagens aéreas</h3>
+            <p>Na hora de pesquisar suas passagens aéreas, lembre-se de conferir o aeroporto de origem e de destino, a relação preço/duração do voo e a bagagem incluída na sua tarifa. Algumas passagens de avião baratas têm muitas escalas e não incluem bagagem. Se o seu voo tiver escalas, verifique se você precisa trocar de aeroporto.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section-7">
+    <div class="container-section-7">
+        <h1>Passagens Aéreas</h1>
+        <p>Na Decolar, nos dedicamos a proporcionar experiências inesquecíveis a todos os viajantes em busca de passagens aéreas baratas. Sabemos que uma das melhores sensações é descobrir o mundo, e nada pode impedir que você alcance os destinos dos seus sonhos. É por isso que estamos comprometidos em oferecer voos de qualidade a preços acessíveis, tornando sua jornada tão empolgante quanto econômica.
+        </p>
+        <br>
+        <p>Ao explorar nossas opções de <em>passagens aéreas</em>, você encontrará uma variedade de destinos emocionantes e irresistíveis. Desde as metrópoles urbanas até os paraísos tropicais, temos uma seleção cuidadosamente elaborada para satisfazer suas preferências de viagem. Com <a href="">companhias aéreas</a> de renome em todo o mundo, garantimos que sua jornada seja segura, confortável e, o mais importante, com um ótimo custo-benefício.</p>
+        <br>
+        <p>Seja explorando as passagens aéreas baratas, desvendando as oportunidades das <a href="">passagens promocionais de madrugada</a> ou aproveitando os atrativos dos nossos pacotes de viagem, a Decolar é o seu parceiro ideal para transformar sonhos em realidade. Nos dedicamos a proporcionar experiências inesquecíveis e a garantir que cada momento da sua viagem seja marcante e satisfatório.</p>
+        <br>
+
+            <div class="content-accordion">
+                <div class="question-answer">
+                    <div class="question">
+                        <h2 class="title-question">
+                            Como Comprar Passagens Aéreas Baratas
+                        </h2>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>Sonha em viajar pelo mundo sem esvaziar os bolsos? A Decolar é a sua parceira ideal. Ao longo dos anos, tornou-se uma das principais plataformas de busca de voos, proporcionando experiências inesquecíveis a preços acessíveis. Aqui, apresentamos um guia prático para encontrar passagens aéreas mais baratas na Decolar:
+                            <br><br>
+
+                            1. Planeje-se com Antecedência: As tarifas tendem a ser mais baratas quando compradas com alguns meses de antecedência. Ao planejar sua viagem com tempo, você tem mais chances de encontrar promoções e voos a preços mais atrativos.
+                            <br><br>
+                            
+                            2. Use a Função "Mês Mais Barato": Se tiver flexibilidade nas datas, a Decolar oferece a opção "Mês Mais Barato", mostrando os dias com as tarifas mais baixas. Esta ferramenta é uma aliada poderosa para viajantes que buscam economizar.
+                            <br><br>
+                            
+                            3. Configure Alertas de Preços: Não tem tempo para verificar os preços todos os dias? Configure alertas! A Decolar irá notificá-lo quando o valor do voo para o seu destino flutuar, garantindo que você reserve no momento ideal.
+                            <br><br>
+                            
+                            4. Explore Parcerias e Promoções: Graças às parcerias sólidas da Decolar com diversas companhias aéreas, há sempre promoções e ofertas especiais disponíveis. Mantenha-se atualizado com as ofertas, subscrevendo a newsletter ou seguindo a Decolar nas redes sociais.
+                            <br><br>
+                            
+                            5. Evite Altas Temporadas: Se possível, evite viajar em períodos de alta temporada, como feriados e férias escolares. Os preços tendem a ser mais elevados devido à alta demanda.
+                            <br><br>
+                            
+                            6. Considere Voos com Escalas: Voos diretos são convenientes, mas muitas vezes os voos com escalas podem ser significativamente mais baratos. Avalie as opções e veja se um voo com escala pode se adequar ao seu itinerário.
+                            <br><br>
+                            
+                            7. Verifique Aeroportos Alternativos: Muitas cidades têm mais de um aeroporto. Verifique se há aeroportos alternativos nas proximidades do seu destino. Por vezes, voar para um aeroporto menor pode ser mais barato.
+                            <br><br>
+                            
+                            Ao seguir estas dicas e aproveitar os recursos avançados da Decolar, a sua viagem dos sonhos pode se tornar uma realidade sem estourar o orçamento. Boa viagem!</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h2 class="title-question">
+                            Voo Pelas Principais Linhas Aéreas do Brasil com a Decolar
+                        </h2>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>O Brasil, com sua vastidão continental e rica tapeçaria cultural, exige uma forte rede de transporte aéreo. A boa notícia é que, através da Decolar, os viajantes têm acesso facilitado às principais companhias aéreas do país, garantindo viagens seguras, confortáveis e sempre ao melhor preço.
+                            <br><br>
+
+                            As Gigantes do Céu Brasileiro à Distância de um Clique:
+                            <br><br>
+                            
+                           <a href="">LATAM Airlines</a>: Originária da fusão entre a TAM e a LAN Chile, a LATAM não apenas conecta as principais cidades brasileiras, mas também oferece rotas internacionais para vários continentes. Com a Decolar, reservar seu assento na LATAM é rápido e descomplicado.
+                            <br><br>
+                            
+                            <a href="">GOL Linhas Aéreas</a>: Desde que começou a operar no início dos anos 2000, a GOL tem sido sinônimo de inovação e qualidade. E, claro, através da Decolar, você pode aproveitar ofertas exclusivas para viajar com esta renomada aerolínea.
+                            <br><br>
+                            
+                            <a href="">Azul Linhas</a> Aéreas: A Azul, com sua proposta única de conectar cidades menores e oferecer uma experiência de voo superior, está ao alcance dos usuários da Decolar, que podem se beneficiar de promoções especiais e facilidades no pagamento.
+                            <br><br>
+                            
+                            <a href="">Avianca</a>: A Avianca tem uma longa história de excelência no atendimento. Ao escolher voar com a Avianca através da Decolar, os passageiros garantem uma experiência memorável, aliada a preços competitivos.
+                            <br><br>
+                            
+                            Escolha, Reserve e Voe!
+                            <br><br>
+                            
+                            Com a Decolar, voar pelas principais aerolíneas que operam no Brasil é mais do que apenas uma viagem: é uma experiência completa. Selecione seu próximo destino, faça sua reserva com facilidade e prepare-se para desfrutar do melhor que o mundo da aviação tem a oferecer!</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h2 class="title-question">
+                            Descubra os Principais Destinos com as passagens aéreas na Decolar
+                        </h2>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>O Brasil é um país repleto de belezas naturais, cidades vibrantes e destinos culturais ricos. E ao olhar para além de suas fronteiras, a lista de destinos de viagem se expande ainda mais. Com a Decolar, explorar os principais pontos turísticos nacionais e internacionais torna-se uma experiência fascinante e acessível.
+                            <br><br>
+
+                           <span>Destinos Nacionais:</span> 
+                            <br><br>
+                           <a href=""> Rio de Janeiro</a>: Conhecido mundialmente por seu Pão de Açúcar, Cristo Redentor e praias icônicas como Copacabana e Ipanema, o Rio é uma mistura irresistível de natureza e cultura.
+                            <br><br>
+                            
+                            <a href="">São Paulo</a>: O coração econômico do Brasil é também um centro cosmopolita de cultura, gastronomia e arte, oferecendo atrações para todos os gostos.
+                            <br><br>
+                            
+                            <a href="">Salvador</a>: A capital da Bahia é um espetáculo de cores, ritmos e sabores, onde o patrimônio histórico se mistura com a vibrante cultura afro-brasileira.
+                            <br><br>
+                            
+                            <a href="">Foz do Iguaçu</a>: Lar das majestosas Cataratas do Iguaçu, este destino é uma joia da natureza que atrai visitantes de todo o mundo.
+                            <br><br>
+                            
+                           <span>Destinos Internacionais:</span> 
+                            <br><br>
+                            <a href="">Buenos Aires</a>: A capital argentina, com seu tango, arquitetura e carne de primeira qualidade, está a apenas algumas horas de voo, tornando-se uma opção perfeita para uma escapadela.
+                            <br><br>
+                            
+                            <a href="">Miami</a>: Um dos destinos internacionais mais populares entre os brasileiros, Miami é sinônimo de praias, compras e vida noturna agitada.
+                            <br><br>
+                            
+                            Lisboa: A capital portuguesa, rica em história e cultura, é um ponto de partida ideal para explorar a Europa.
+                            <br><br>
+                            
+                            Santiago: Aninhada entre as montanhas dos Andes, a capital chilena combina modernidade com tradição, oferecendo uma experiência única para seus visitantes.
+                            <br><br>
+                            
+                           <span>Explore com a Decolar:</span> 
+                            <br><br>
+                            Seja qual for o seu destino, nacional ou internacional, a Decolar está pronta para tornar sua viagem inesquecível. Com ofertas exclusivas, opções variadas de voo e a possibilidade de combinar passagens, hotéis e outros serviços, planejar sua próxima aventura nunca foi tão fácil e emocionante. Embarque nesta jornada conosco e descubra o melhor que o Brasil e o mundo têm a oferecer!</p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h2 class="title-question">
+                            Desfrute de Descontos e Promoções Exclusivas!
+                        </h2>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fas fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fas fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>A Decolar sempre buscou proporcionar as melhores experiências de viagem a seus clientes, e parte dessa missão envolve tornar as viagens mais acessíveis. Seja você um aventureiro em busca de novos destinos ou alguém planejando aquelas merecidas férias, temos ofertas que se adequam a todos os bolsos e desejos.
+                            <br><br>
+
+                           <span>Promoções Incríveis</span>                            
+                            <br><br>
+                            Regularmente, lançamos promoções exclusivas para diferentes destinos, tanto nacionais quanto internacionais. Com a Decolar, você pode descobrir lugares mágicos a preços que nunca imaginou serem possíveis.
+                            <br><br>
+                            
+                            <span>Promoções no App</span>
+                            <br><br>
+                            No nosso app, não só encontrará uma interface amigável e funcionalidades projetadas para simplificar sua busca, mas também descobrirá promoções exclusivas! Isso mesmo, preços ainda mais baixos que estão disponíveis apenas para os usuários do nosso aplicativo.
+                            <br><br>
+                            
+                            <span>Facilidades no Parcelamento</span>
+                            <br><br>
+                            Sabemos que, às vezes, um empurrãozinho no orçamento pode fazer toda a diferença. Por isso, em parceria com a Koin, oferecemos opções de parcelamento que facilitam a realização dos seus sonhos. Divida sua viagem em várias parcelas e pague no ritmo que melhor se adapta à sua realidade financeira.
+                            <br><br>
+                            
+                            <span>Por que escolher a Koin?</span>
+                            <br><br>
+                            A Koin é uma referência quando se trata de soluções de pagamento parcelado. Sua plataforma segura e intuitiva garante que você possa dividir suas compras na Decolar de forma transparente e sem complicações.
+                            <br><br>
+                            
+                            <span>Viaje Agora, Pague Depois</span>
+                            <br><br>
+                            Com a opção de "compre agora e pague depois", você tem a liberdade de planejar sua viagem sem se preocupar imediatamente com os pagamentos. Organize sua viagem, garanta os melhores preços e escolha a melhor forma de pagamento para sua situação.</p>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+</section>
+
+
+<section class="section-8">
+    <div class="container-section-8">
+        <div class="caixa">
+            <h4>Companhias Aéreas</h4>
+            <ul>
+                <li><a href="">VOEGOL</a></li>
+                <li><a href="">Azul Linhas Aéreas</a></li>
+                <li><a href="">LATAM Airlines</a></li>
+                <li><a href="">TAM</a></li>
+            </ul>
+        </div>
+        <div class="caixa">
+            <h4>Voos Baratos</h4>
+            <ul>
+                <li><a href="">Passagens aereas baratas</a></li>
+                <li><a href="">Passagens para o Brasil</a></li>
+                <li><a href="">Passagens Promo</a></li>
+                <li><a href="">Passagem para Recife</a></li>
+            </ul>
+        </div>
+        <div class="caixa">
+            <h4>Voos Nacionais</h4>
+            <ul>
+                <li><a href="">Passagem para Fortaleza</a></li>
+                <li><a href="">Passagem para Sao Paulo</a></li>
+                <li><a href="">Passagem para Rio de Janeiro</a></li>
+                <li><a href="">Passagem para Natal</a></li>
+            </ul>
+        </div>
+        <div class="caixa">
+            <h4>Passagens Internacionais</h4>
+            <ul>
+                <li><a href="">Encontre voos para Nova Iorque</a></li>
+                <li><a href="">Passagem para Portugual</a></li>
+                <li><a href="">Passagem para Orlando</a></li>
+                <li><a href="">Encontre voos para Buenos Aires</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+</main>
+<footer>
+    <div class="caixa caixa1">
+        <div class="content-caixa">
+            <i class="fa-regular fa-envelope"></i>
+            <div class="form">
+                <h2>Inscreva-se para recber ofertas exclusivas</h2>
+                <input type="text" placeholder="Insira seu e-mail">
+            </div>
+            <div class="info"><a href="">Quero recebê-las!</a></div>
+        </div>
+        <span>Você receberá e-mails promocionais da Decolar. Para mais informações, consulte as <a href="">políticas de privacidade</a>.</span>
+        <div class="line"></div>
+    </div>
+    <div class="caixa caixa2">
+        <div class="content-caixa">
+            <div class="box">
+                <ul>
+                    <li>Lugares para Viajar</li>
+                    <li><a href="">Roteiros de Viagem</a></li>
+                    <li><a href="">Cancún</a></li>
+                    <li><a href="">Nova York</a></li>
+                    <li><a href="">Porto de Galinhas</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <li>Viajar junto a Decolar</li>
+                    <li><a href="">Guía de Destinos</a></li>
+                    <li><a href="">Hotéis Fazenda</a></li>
+                    <li><a href="">Passagens Aéreas</a></li>
+                    <li><a href="">Aluguel de Carros</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <li>Hospedagens</li>
+                    <li><a href="">Casas para alugar</a></li>
+                    <li><a href="">Iberostar Praia do Forte</a></li>
+                    <li><a href="">Salinas Maragogi</a></li>
+                    <li><a href="">Hotel Rio de Janeiro</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <li>Companhías Aéreas</li>
+                    <li><a href="">Latam</a></li>
+                    <li><a href="">Azul</a></li>
+                    <li><a href="">Gol</a></li>
+                    <li><a href="">United</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="caixa caixa3">
+        <div class="content-caixa">
+            <div class="topo">
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <div class="comunicacao">
+                    <ul><span>Central de vendas</span> 0800 883 6342</ul>
+                    <ul><span>Pós venda</span> Atendimento ao cliente</ul>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+        <div class="content-caixa links">
+            <div class="box">
+                <ul>
+                    <li>Minha Conta</li>
+                    <li><a href="">Passaporte Decolar</a></li>
+                    <li><a href="">Cartão Decolar Santander</a></li>
+                    <li><a href="">Minhas Viagens</a></li>
+                    <li><a href="">Meu Perfil</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <li>Somos Decolar</li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Trabalhe na Decolar</a></li>
+                    <li><a href="">Contato com a imprensa</a></li>
+                    <li><a href="">Relações com Investidores</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <li>Compra segura</li>
+                    <li><a href="">Termos e condições</a></li>
+                    <li><a href="">Política de privacidade</a></li>
+                    <li><a href="">Black Friday</a></li>
+                    <li><a href="">Oferta Uau</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <ul>
+                    <li>Promova seu negócio</li>
+                    <li><a href="">Cadastre sua locadora</a></li>
+                    <li><a href="">Programa de franquias Decolar</a></li>
+                    <li><a href="">Premium Connectivity Partner</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navegator">
+            <div class="content">
+            <label for="">NAVEGAR NO SITE DE:</label>
+            <br>
+            <select name="" id="">
+                <option value="">Brasil</option>
+                <option value="">Argentina</option>
+                <option value="">Bolivia</option>
+                <option value="">Chile</option>
+                <option value="">Colômbia</option>
+                <option value="">Costa Rica</option>
+                <option value="">Equador</option>
+                <option value="">El Salvador</option>
+                <option value="">Guatemala</option>
+                <option value="">Honduras</option>
+                <option value="">México</option>
+                <option value="">Nicarágua</option>
+                <option value="">Panamá</option>
+                <option value="">Paraguai</option>
+                <option value="">Peru</option>
+                <option value="">Porto Rico</option>
+                <option value="">República Dominicana</option>
+                <option value="">Estados Unidos</option>
+                <option value="">Uruguai</option>
+            </select>
+        </div>
+        </div>
+        <div class="img-footer">
+            <img src="./acets/img-footer.webp" alt="">
+        </div>
+    </div>
+    <div class="caixa caixa4">
+        <div class="content-caixa">
+            <div class="left">
+               <p><strong>Decolar está presente em</strong> Brasil, Argentina, Bolívia, Chile, Colômbia, Costa Rica, Equador, El Salvador, Guatemala, Honduras, México, Nicarágua, Panamá, Paraguai, Peru, Porto Rico, República Dominicana, Estados Unidos, Uruguai</p>
+               <br>
+               <span>DECOLAR.COM - Ministério do Turismo - Cadastur 26.012747.10.0001-6 / 26.012747.10.0002-3 Copyright 1999-2023, Decolar.com Ltda. Todos os direitos reservados.</span>
+               <br>
+               <span>Alameda Grajaú, 219, 2º andar, Alphaville Centro Industrial e Empresarial, Barueri, São Paulo, CEP 06454-050</span>
+               <br>
+            </div>
+
+            <div class="right">
+                <p>A Decolar comercializa os produtos de seus fornecedores apenas de forma direta pelo seu site (www.decolar.com). Não há qualquer venda por redes sociais (Facebook, Instagram, Twitter, LinkedIn, etc.). Pós-vendas - os canais oficiais de atendimento aos clientes são: por meio do telefone 11 4003 9444 e Minhas Viagens. A Decolar não realiza qualquer tipo de abordagem nas redes sociais ou sites de relacionamento, tampouco disponibiliza e-mails de contato com domínios distintos de @decolar.com. Endereços de e-mails com domínios: @hotmail.com @gmail.com @outlook.com ou qualquer outro neste sentido não tem qualquer relação com a Decolar. Mais esclarecimentos em www.decolar.com.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://kit.fontawesome.com/71797136fe.js" crossorigin="anonymous"></script>
+    <script src="./scripts/index.js"></script>
+    
+</body>
+</html>
